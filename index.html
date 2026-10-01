@@ -1,0 +1,485 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Devansh — Data Analyst Portfolio</title>
+  <meta name="description"
+    content="Devansh portfolio — Data Analyst building end-to-end analytics pipelines, ML models, and scalable solutions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div id="cursor-ring" aria-hidden="true"></div>
+  <div id="cursor-dot" aria-hidden="true"></div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="navbar" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" aria-label="portfolio home">myPortfolio</a>
+      <ul class="nav-links" role="list">
+        <li><a href="#hero" class="nav-link active" id="nav-home">HOME</a></li>
+        <li><a href="#skills" class="nav-link" id="nav-skills">SKILLS</a></li>
+        <li><a href="#work" class="nav-link" id="nav-work">WORK</a></li>
+        <li><a href="#experience" class="nav-link" id="nav-exp">EXPERIENCE</a></li>
+        <li><a href="#certifications" class="nav-link" id="nav-certs">CERTS</a></li>
+        <li><a href="#contact" class="nav-link" id="nav-contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="hero" aria-label="Hero section">
+    <canvas id="particle-canvas" aria-hidden="true"></canvas>
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-eyebrow">
+          <span class="dot-pulse" aria-hidden="true"></span>
+          Available for work
+        </p>
+        <h1 class="hero-headline">
+          HI, I AM<br />
+          <span class="hero-name">DEVANSH.</span><br />
+        </h1>
+        <p class="hero-sub">
+          Data Analyst building end-to-end analytics<br />pipelines and scalable solutions.
+        </p>
+        <div class="hero-cta-row">
+          <a href="#work" class="btn btn-primary" id="hero-cta-work">
+            VIEW MY WORK
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-ghost" id="hero-cta-contact">GET IN TOUCH</a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint" aria-hidden="true">
+      <span>SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section skills-section" aria-label="Skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">SKILLS</span>
+        <div class="section-rule" aria-hidden="true"></div>
+      </div>
+    </div>
+    <div class="inf-carousel-outer" id="skills-outer">
+      <div class="inf-carousel-track" id="skills-track" aria-label="Skills carousel">
+        <article class="skill-card" role="listitem" tabindex="0" aria-label="Programming Languages">
+          <div class="skill-logos" aria-hidden="true">
+            <img src="assets/images/Python-logo-notext.svg.webp" class="skill-logo-bg"
+              style="bottom:-10px;right:8px;width:90px;opacity:.12;" alt="">
+            <img src="assets/images/sql.png" class="skill-logo-bg" style="bottom:20px;left:10px;width:85px;opacity:.15;"
+              alt="">
+          </div>
+          <div class="skill-content">
+            <span class="skill-label">LANGUAGES</span>
+            <span class="skill-name">PYTHON, SQL, MYSQL, POSTGRESQL+</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--pct:95%"></div>
+            </div>
+          </div>
+        </article>
+        <article class="skill-card" role="listitem" tabindex="0" aria-label="Data Analysis and Statistics">
+          <div class="skill-logos" aria-hidden="true">
+            <img src="assets/images/ab testing.png" class="skill-logo-bg"
+              style="bottom:-8px;right:6px;width:85px;opacity:.12;" alt="">
+          </div>
+          <div class="skill-content">
+            <span class="skill-label">STATISTICS</span>
+            <span class="skill-name">EDA, A/B TESTING, REGRESSION+</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--pct:90%"></div>
+            </div>
+          </div>
+        </article>
+        <article class="skill-card" role="listitem" tabindex="0" aria-label="Machine Learning">
+          <div class="skill-logos" aria-hidden="true">
+            <img src="assets/images/Python-logo-notext.svg.webp" class="skill-logo-bg"
+              style="bottom:-6px;right:10px;width:80px;opacity:.10;" alt="">
+          </div>
+          <div class="skill-content">
+            <span class="skill-label">MACHINE LEARNING</span>
+            <span class="skill-name">PREDICTIVE MODELING, EVALUATION+</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--pct:85%"></div>
+            </div>
+          </div>
+        </article>
+        <article class="skill-card" role="listitem" tabindex="0" aria-label="BI and Visualization">
+          <div class="skill-logos" aria-hidden="true">
+            <img src="assets/images/powerbi.png" class="skill-logo-bg"
+              style="bottom:-8px;right:4px;width:88px;opacity:.13;" alt="">
+            <img src="assets/images/tableau.jpg" class="skill-logo-bg"
+              style="bottom:18px;right:82px;width:52px;opacity:.10;border-radius:6px;" alt="">
+            <img src="assets/images/excel.png" class="skill-logo-bg" style="top:10px;right:8px;width:38px;opacity:.10;"
+              alt="">
+          </div>
+          <div class="skill-content">
+            <span class="skill-label">BI &amp; VISUALIZATION</span>
+            <span class="skill-name">POWER BI, TABLEAU, DAX, EXCEL+</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--pct:92%"></div>
+            </div>
+          </div>
+        </article>
+        <article class="skill-card" role="listitem" tabindex="0" aria-label="Data Management">
+          <div class="skill-logos" aria-hidden="true">
+            <img src="assets/images/pandas.png" class="skill-logo-bg"
+              style="bottom:-6px;left:30px;width:110px;opacity:.70;" alt="">
+            <img src="assets/images/numpy.png" class="skill-logo-bg"
+              style="bottom:20px;right:78px;width:50px;opacity:.09;" alt="">
+          </div>
+          <div class="skill-content">
+            <span class="skill-label">DATA MANAGEMENT</span>
+            <span class="skill-name">PANDAS, NUMPY, DATA CLEANING+</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--pct:88%"></div>
+            </div>
+          </div>
+        </article>
+        <article class="skill-card" role="listitem" tabindex="0" aria-label="AI Tools">
+          <div class="skill-logos" aria-hidden="true">
+            <img src="assets/images/Claude_AI_symbol.png" class="skill-logo-bg"
+              style="bottom:-6px;right:8px;width:82px;opacity:.11;" alt="">
+          </div>
+          <div class="skill-content">
+            <span class="skill-label">AI TOOLS</span>
+            <span class="skill-name">PROMPT ENGINEERING, GEN AI+</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--pct:80%"></div>
+            </div>
+          </div>
+        </article>
+        <article class="skill-card" role="listitem" tabindex="0" aria-label="Platforms">
+          <div class="skill-logos" aria-hidden="true">
+            <img src="assets/images/github.svg" class="skill-logo-bg"
+              style="bottom:-4px;right:8px;width:76px;opacity:.11;filter:invert(1);" alt="">
+          </div>
+          <div class="skill-content">
+            <span class="skill-label">PLATFORMS</span>
+            <span class="skill-name">GITHUB, JUPYTER NOTEBOOK+</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--pct:85%"></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FEATURED WORK -->
+  <section id="work" class="section work-section" aria-label="Featured work">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">FEATURED WORK</span>
+        <div class="section-rule" aria-hidden="true"></div>
+      </div>
+
+      <div class="featured-grid">
+
+        <!-- HERO TILE 1 -->
+        <article class="feat-card feat-card--hero" tabindex="0" aria-label="End to End Sales Analytics Pipeline">
+          <div class="feat-bg-canvas" aria-hidden="true">
+            <canvas class="feat-canvas" data-hue="160"></canvas>
+          </div>
+          <div class="feat-body">
+            <span class="feat-number">01</span>
+            <div class="feat-tags">
+              <span class="tag">PYTHON</span><span class="tag">SQL</span><span class="tag">STREAMLIT</span><span
+                class="tag">PANDAS</span>
+            </div>
+            <h2 class="feat-title">End-to-End Sales Analytics Pipeline</h2>
+            <p class="feat-desc">Built a fully automated sales data pipeline ingesting raw CSV/SQL data, applying
+              multi-stage transformations, and surfacing insights through an interactive Streamlit dashboard. Processes
+              500K+ rows with live KPI tracking, YoY comparisons, and regional breakdowns.</p>
+            <div class="feat-links">
+              <a href="https://github.com/real-devansh/End-to-End-Sales-Analytics-Pipeline" target="_blank"
+                rel="noopener noreferrer" class="icon-link" id="sales-github" aria-label="Sales Pipeline GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
+                </svg>
+              </a>
+              <a href="https://e2e-sales-analytics-pipeline-dashboard.streamlit.app/" target="_blank"
+                rel="noopener noreferrer" class="icon-link" id="sales-live" aria-label="Sales Pipeline live demo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- HERO TILE 2 -->
+        <article class="feat-card feat-card--hero" tabindex="0"
+          aria-label="Data-Driven Feature Optimization and Regression">
+          <div class="feat-bg-canvas" aria-hidden="true">
+            <canvas class="feat-canvas" data-hue="240"></canvas>
+          </div>
+          <div class="feat-body">
+            <span class="feat-number">02</span>
+            <div class="feat-tags">
+              <span class="tag">PYTHON</span><span class="tag">STATISTICS</span><span class="tag">A/B
+                TESTING</span><span class="tag">REGRESSION</span>
+            </div>
+            <h2 class="feat-title">Data-Driven Feature Optimization &amp; Regression</h2>
+            <p class="feat-desc">Built an A/B testing framework in Python comparing ad campaigns over 365 days.
+              Discovered a statistically significant 134% lift in daily conversions using t-tests and cohort analysis.
+              Built a linear regression model (R2 76%) to forecast conversions from click volume.</p>
+            <div class="feat-links">
+              <a href="https://github.com/real-devansh" target="_blank" rel="noopener noreferrer" class="icon-link"
+                id="reg-github" aria-label="Regression Model GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- CATEGORY TILE — Dashboards -->
+        <a href="dashboards.html" class="feat-card feat-card--category" id="tile-dashboards"
+          aria-label="View all Dashboard projects">
+          <div class="feat-cat-bg" aria-hidden="true">
+            <img src="assets/dashboard-powerbi.png" class="feat-cat-img" alt="" />
+            <div class="feat-cat-overlay"></div>
+          </div>
+          <div class="feat-body feat-body--cat">
+            <div class="feat-cat-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round">
+                <rect x="3" y="3" width="7" height="9" rx="1" />
+                <rect x="14" y="3" width="7" height="5" rx="1" />
+                <rect x="14" y="12" width="7" height="9" rx="1" />
+                <rect x="3" y="16" width="7" height="5" rx="1" />
+              </svg>
+            </div>
+            <h2 class="feat-cat-title">Dashboards</h2>
+            <p class="feat-cat-sub">Power BI &middot; Excel &middot; Tableau</p>
+            <p class="feat-cat-desc">Sales, HR, Revenue and Business Intelligence dashboards with interactive,
+              data-driven visual stories.</p>
+            <span class="feat-cat-cta">VIEW ALL <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="14" height="14">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg></span>
+          </div>
+        </a>
+
+        <!-- CATEGORY TILE — AI/ML -->
+        <a href="aiml.html" class="feat-card feat-card--category feat-card--aiml" id="tile-aiml"
+          aria-label="View all AI ML projects">
+          <div class="feat-cat-bg" aria-hidden="true">
+            <img src="assets/images/AIML.png" class="feat-cat-img feat-cat-img--aiml" alt="" />
+            <div class="feat-cat-overlay feat-cat-overlay--purple"></div>
+          </div>
+          <div class="feat-body feat-body--cat">
+            <div class="feat-cat-icon feat-cat-icon--purple" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round">
+                <circle cx="12" cy="8" r="4" />
+                <path d="M6 20v-2a6 6 0 0112 0v2" />
+                <line x1="12" y1="12" x2="12" y2="14" />
+              </svg>
+            </div>
+            <h2 class="feat-cat-title">AI / ML Projects</h2>
+            <p class="feat-cat-sub">Machine Learning &middot; Gen AI &middot; Deep Learning</p>
+            <p class="feat-cat-desc">End-to-end ML pipelines, generative AI experiments, and statistical modeling
+              projects.</p>
+            <span class="feat-cat-cta">VIEW ALL <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="14" height="14">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg></span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- WORK EXPERIENCE -->
+  <section id="experience" class="section experience-section" aria-label="Work Experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">WORK EXPERIENCE</span>
+        <div class="section-rule" aria-hidden="true"></div>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-marker" aria-hidden="true">
+            <div class="tl-dot"></div>
+            <div class="tl-line"></div>
+          </div>
+          <article class="exp-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">Student Intern</h3>
+                <span class="exp-company">Edunet Foundation &mdash; Microsoft</span>
+              </div>
+              <div class="exp-meta">
+                <span class="exp-date">Apr 2025 &ndash; May 2025</span>
+                <span class="exp-type">Remote Internship</span>
+              </div>
+            </div>
+            <ul class="exp-bullets">
+              <li>Designed and deployed end-to-end ML pipelines using Python, scikit-learn, and Azure cognitive
+                services.</li>
+              <li>Developed LLM-powered prototypes using prompt engineering techniques with GPT-based models via Azure
+                OpenAI.</li>
+              <li>Applied supervised learning algorithms (regression, classification) to real-world datasets, achieving
+                over 80% model accuracy.</li>
+              <li>Documented findings and presented insights to mentors in bi-weekly demo sessions.</li>
+            </ul>
+            <div class="exp-tags">
+              <span class="tag">PYTHON</span><span class="tag">AZURE AI</span><span class="tag">SCIKIT-LEARN</span><span
+                class="tag">LLMs</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker" aria-hidden="true">
+            <div class="tl-dot"></div>
+            <div class="tl-line"></div>
+          </div>
+          <article class="exp-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">ML Apperenticeship</h3>
+                <span class="exp-company">Amazon ML Summer School</span>
+              </div>
+              <div class="exp-meta">
+                <span class="exp-date">Summer 2025</span>
+                <span class="exp-type">Selective Program</span>
+              </div>
+            </div>
+            <ul class="exp-bullets">
+              <li>Selected from a competitive applicant pool to participate in Amazon intensive ML curriculum led by
+                senior researchers.</li>
+              <li>Covered advanced topics: deep learning architectures, NLP, reinforcement learning, and probabilistic
+                graphical models.</li>
+              <li>Implemented hands-on projects applying learned concepts to production-scale data problems.</li>
+              <li>Engaged in live sessions with Amazon scientists on real-world ML system design challenges.</li>
+            </ul>
+            <div class="exp-tags">
+              <span class="tag">DEEP LEARNING</span><span class="tag">NLP</span><span class="tag">REINFORCEMENT
+                LEARNING</span><span class="tag">AMAZON</span>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="section certs-section" aria-label="Certifications">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">CERTIFICATIONS</span>
+        <div class="section-rule" aria-hidden="true"></div>
+      </div>
+      <div class="certs-grid">
+
+        <article class="cert-card" tabindex="0" aria-label="NPTEL Python for Data Science certification">
+          <div class="cert-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg>
+          </div>
+          <div class="cert-body">
+            <span class="cert-issuer">IIT MADRAS / NPTEL</span>
+            <h3 class="cert-title">Python for Data Science</h3>
+            <p class="cert-desc">Completed with distinction. Covered NumPy, Pandas, Matplotlib, statistical modelling,
+              and scikit-learn pipelines for applied data science.</p>
+            <div class="cert-footer">
+              <span class="cert-year">2025</span>
+              <a href="https://www.linkedin.com/in/realdevansh/overlay/Certifications/614838616/treasury/?profileId=ACoAAD8qKjMBqWWVHZwdDeJJWX2PoFini22jzYQ"
+                target="_blank" rel="noopener noreferrer" class="cert-link" id="nptel-cred"
+                aria-label="View NPTEL credential">
+                VIEW CREDENTIAL
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round" width="12" height="12">
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section" aria-label="Contact">
+    <div class="container contact-inner">
+      <div class="contact-glow" aria-hidden="true"></div>
+      <p class="contact-eyebrow">WHAT'S NEXT?</p>
+      <h2 class="contact-headline">Let's Build<br /><span class="hero-accent">Something</span><br />Extraordinary.</h2>
+      <a href="mailto:devanshmishra45220@gmail.com" class="btn btn-primary btn-lg" id="contact-email-btn">
+        SAY HELLO
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="5" y1="12" x2="19" y2="12" />
+          <polyline points="12 5 19 12 12 19" />
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p class="footer-copy">&copy; 2026 &mdash; Designed &amp; Built with precision.</p>
+      <div class="footer-socials" aria-label="Social links">
+        <a href="https://github.com/real-devansh" target="_blank" rel="noopener noreferrer" class="icon-link"
+          id="footer-github" aria-label="GitHub profile">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path
+              d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/realdevansh/" target="_blank" rel="noopener noreferrer" class="icon-link"
+          id="footer-linkedin" aria-label="LinkedIn profile">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path
+              d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zm-5 6a3 3 0 00-3 3v5h2v-5a1 1 0 011-1 1 1 0 011 1v5h2v-5a3 3 0 00-3-3zm-7 1H5v8h2v-8zm-1-3.5a1.5 1.5 0 100 3 1.5 1.5 0 000-3z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
